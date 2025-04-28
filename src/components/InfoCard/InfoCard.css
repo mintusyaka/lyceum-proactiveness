@@ -1,0 +1,35 @@
+.info-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+/* Картка */
+.info-card {
+    background-color: #cbffc0; /* світлий зелений */
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+    max-width: 400px;
+    transition: box-shadow 0.4s ease; /* ПЛАВНИЙ ПЕРЕХІД */
+  }
+  
+  /* При наведенні */
+  .info-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.356); /* темніша і глибша тінь */
+  }
+
+  /* Анімація карточки */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

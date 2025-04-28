@@ -1,0 +1,100 @@
+.classes {
+    background-image: url('../../assets/images/classes-bg2.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .class-card {
+    background: rgba(255, 255, 255, 0.527);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.4s ease; /* ПЛАВНИЙ ПЕРЕХІД */
+  }
+
+  .class-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.356); /* темніша і глибша тінь */
+  }
+  
+  .class-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .class-info {
+    position: relative;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .class-info h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Спеціальні кольори секцій */
+  .primary {
+    background-color: #8ca5a5;
+  }
+  
+  .middle {
+    background-color: #b5878e;
+  }
+  
+  .high {
+    background-color: #f28c82;
+  }
+  
+  .extramural {
+    background-color: #77c2c5;
+  }
+  
+  .free-listener {
+    background-color: #e8ba74;
+  }
+  
+  .prep-school {
+    background-color: #b36b76;
+  }
+  
+  .small {
+    height: 150px;
+  }

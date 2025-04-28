@@ -1,0 +1,88 @@
+/* Хедер */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: none;
+  transition: all 0.3s ease; /* Плавний перехід */
+}
+
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.8); /* Легкий білий фон */
+  backdrop-filter: blur(8px); /* Матованість */
+  position: fixed; /* ТЕПЕР navbar прилипає після прокрутки */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Контейнер всередині навбару */
+.navbar-container {
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Інше (залишається без змін) */
+.logo img {
+  height: 60px;
+  filter: drop-shadow(1px 1px 5px rgb(187, 187, 187));
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgb(187, 187, 187); /* Додаємо тінь */
+  transition: color 0.3s ease;
+}
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.demo-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.demo-button:hover {
+  background-color: #e68900;
+}
+
+.lang-switch {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(0, 0, 0); /* теж білий */
+  white-space: nowrap;
+  text-shadow: 1px 1px 5px rgb(187, 187, 187); /* Додаємо тінь */
+}
+
+.pangolin-regular {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

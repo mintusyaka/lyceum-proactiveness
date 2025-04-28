@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Logo from "../../logo.png"
+import Logo from '../../../public/logo.png';
 
 function Navbar() {
   const { i18n } = useTranslation();

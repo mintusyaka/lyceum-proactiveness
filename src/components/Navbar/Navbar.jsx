@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Logo from "../../logo.png"
 
 function Navbar() {
   const { i18n } = useTranslation();
@@ -28,7 +29,7 @@ function Navbar() {
       <div className="navbar-container pangolin-regular">
 
         <Link to="/" className="logo">
-          <img src="/logo.png" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </Link>
 
         <nav className="nav-links">
